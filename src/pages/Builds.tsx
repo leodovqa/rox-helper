@@ -29,8 +29,9 @@ export default function Builds() {
               <h5>1. Stat Allocation: The Pure DEX Route</h5>
               <p>Your stat points dictate your entire playstyle. For this build, your auto-attacks are secondary; your skills are your primary weapon.</p>
               <ul>
-                <li><strong>Primary Stat (DEX):</strong> Put absolutely every single stat point into DEX. DEX is your main stat because it massively increases your Physical Attack, boosts your accuracy, and vitally reduces your skill cast time.</li>
-                <li><strong>Secondary Stats (VIT or AGI):</strong> Once your DEX is completely maxed out, you have two options. Flex into VIT to gain HP percentage bonuses for survivability in KVM/GVG, or put points into AGI if you want to smooth out your skill animations and maintain decent auto-attack speed while your skills are on cooldown.</li>
+                <li><strong>Primary Stat (DEX):</strong> Put absolutely every single stat point into DEX. A pure DEX build is exactly what you need for consistent skill spam. It massively increases your Physical Attack, boosts your accuracy, and vitally reduces your skill cast time.</li>
+                <li><strong>Secondary Stats (AGI or VIT):</strong> Once your DEX is completely maxed out, the meta is to go into AGI or VIT. Pumping AGI helps boost your overall ASPD for when your skills are on cooldown. Alternatively, going into VIT has massive benefits in KVM and GVG modes because it helps you survive PvP burst damage if you stack HP percentage cards!</li>
+                <li><strong>Why Zero LUK?</strong> If you are committing to the PEN/Skill-spam life, leave your LUK at zero! In Ragnarok X, LUK increases your chance to deal Critical damage and proc your beast to attack. However, your skills cannot trigger critical hits, making LUK completely useless for a pure PEN build.</li>
               </ul>
             </div>
 
