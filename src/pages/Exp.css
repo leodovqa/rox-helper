@@ -1,0 +1,60 @@
+.exp-container h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.exp-table th, .exp-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.exp-table th {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.exp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.exp-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.notes {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: rgba(3, 218, 198, 0.1);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.notes h4 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.notes ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.notes li {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}

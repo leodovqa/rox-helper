@@ -1,0 +1,40 @@
+.home-container h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.home-container p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.feature-card.empty {
+  opacity: 0.7;
+  border-style: dashed;
+}
