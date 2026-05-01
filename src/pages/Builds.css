@@ -40,7 +40,7 @@
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -56,95 +56,67 @@
 .build-header h4 {
   margin: 0;
   color: var(--secondary-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .build-badge {
   background-color: rgba(3, 218, 198, 0.15);
   color: var(--secondary-color);
-  padding: 0.25rem 0.75rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 16px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-.build-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+.guide-intro {
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0e0e0;
 }
 
-@media (min-width: 768px) {
-  .build-content {
-    grid-template-columns: 1fr 1fr;
-  }
+.guide-intro p {
+  margin-bottom: 1rem;
 }
 
-.build-column h5 {
-  color: #fff;
-  font-size: 1.1rem;
+.build-content.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.build-step {
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.build-step h5 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.build-column p strong {
-  color: var(--primary-color);
-}
-
-.build-column p span {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-.build-note {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+.build-step p {
+  margin-bottom: 1rem;
   line-height: 1.5;
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 1rem;
-  border-radius: 8px;
-  border-left: 3px solid var(--primary-color);
+  color: var(--text-primary);
 }
 
-.build-column ul {
+.build-step ul {
   margin: 0;
   padding-left: 1.5rem;
 }
 
-.build-column li {
+.build-step li {
   margin-bottom: 0.75rem;
   color: var(--text-primary);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-.build-column li strong {
-  color: var(--secondary-color);
-}
-
-.build-footer {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.build-footer h5 {
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.card-tag {
-  background-color: rgba(187, 134, 252, 0.1);
-  border: 1px solid rgba(187, 134, 252, 0.3);
+.build-step li strong {
   color: var(--primary-color);
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
 }
