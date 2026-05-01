@@ -31,6 +31,12 @@ export default function Navigation() {
           <li>
             <Link to="/exp" onClick={closeMenu}>EXP Guide</Link>
           </li>
+          <li>
+            <Link to="/guide" onClick={closeMenu}>Ultimate Guide</Link>
+          </li>
+          <li>
+            <Link to="/builds" onClick={closeMenu}>Class Builds</Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -3,37 +3,99 @@
   margin-top: 0;
 }
 
-.table-wrapper {
-  overflow-x: auto;
+.spots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 2rem;
+}
+
+.spot-card {
   background-color: var(--surface-color);
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.exp-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-.exp-table th, .exp-table td {
-  padding: 1rem;
+.spot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.exp-table th {
-  background-color: rgba(255, 255, 255, 0.05);
+.spot-header h3 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.spot-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
   color: var(--secondary-color);
-  font-weight: 600;
 }
 
-.exp-table tr:last-child td {
-  border-bottom: none;
+.monsters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
-.exp-table tr:hover td {
-  background-color: rgba(255, 255, 255, 0.02);
+.monster-card {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.monster-card:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.monster-image-wrapper {
+  flex-shrink: 0;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.monster-image {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.monster-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.monster-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.monster-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
 }
 
 .notes {
